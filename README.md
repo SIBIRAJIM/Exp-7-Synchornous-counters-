@@ -1,5 +1,10 @@
-# Exp-6-Synchornous-counters - up counter and down counter 
+### Name:SIBIRAJI M 
+### Register number: 212223050048
+
+## Experiment-06 Synchornous counters up counter
+
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
+
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
 ### THEORY 
@@ -29,60 +34,72 @@ Starting with four J-K flip-flops connected in such a way to always be in the �
 The Q outputs of each flip-flop will serve as the respective binary bits of the final, four-bit count:
 
  
- 
 
 Four-bit “Up” Counter
 ![image](https://user-images.githubusercontent.com/36288975/169644758-b2f4339d-9532-40c5-af40-8f4f8c942e2c.png)
 
 
 
-## DOWN COUNTER 
-
-As well as counting “up” from zero and increasing or incrementing to some preset value, it is sometimes necessary to count “down” from a predetermined value to zero allowing us to produce an output that activates when the zero count or some other pre-set value is reached.
-
-This type of counter is normally referred to as a Down Counter, (CTD). In a binary or BCD down counter, the count decreases by one for each external clock pulse from some preset value. Special dual purpose IC’s such as the TTL 74LS193 or CMOS CD4510 are 4-bit binary Up or Down counters which have an additional input pin to select either the up or down count mode.
-![image](https://user-images.githubusercontent.com/36288975/169644844-1a14e123-7228-4ed8-81a9-eb937dff4ac8.png)
-
-
-4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
+1. Create a New Project:
+   - Open Quartus and create a new project by selecting "File" > "New Project Wizard."
+   - Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
+
+2. Create a New Design File:
+   - Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
+   - Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+
+3. Write the Combinational Logic Code:
+   - Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+     
+4. Compile the Project:
+   - To compile the project, click on "Processing" > "Start Compilation" in the menu.
+   - Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+
+5. Analyze and Fix Errors: 
+   - If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+   - Review and fix any issues in your code if necessary.
+   - View the RTL diagram.
+
+6. Verification:
+   - Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+   - Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+   - Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
 
 
 
 ### PROGRAM 
-/*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
 
+## UP COUNTER 
+![Screenshot 2023-12-30 101427](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/b87b3fed-7a90-4b1c-9f83-59c5be738d55)
 
+## DOWN COUNTER 
+![Screenshot 2023-12-30 101001](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/e74b924b-598c-4b95-ba5f-9cad81f775e1)
 
+### RTL REALIZATION
 
+## UP COUNTER 
+![Screenshot 2023-12-21 170942](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/535fdb71-86cb-496d-8ee9-6e2f18933e81)
 
+## DOWN COUNTER 
+![Screenshot 2023-12-21 180236](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/c5536993-4bef-40ea-8ce9-21bb7d8664c1)
 
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
+### TIMING DIGRAMS 
 
+## UP COUNTER  
+![Screenshot 2023-12-21 170827](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/5a05d875-3d36-4173-ab9a-dc83fdedf0ba)
 
-
-
-
-
-
-
-
-### TIMING DIGRAMS FOR COUNTER  
-
-
-
-
+## DOWN COUNTER 
+![Screenshot 2023-12-21 181221](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/d7a763f3-db25-424c-811c-464f31ca2a33)
 
 ### TRUTH TABLE 
 
+## UP COUNTER
+![Screenshot 2023-12-30 101128](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/15773950-67d2-42ff-8628-9ae8619a91e7)
 
-
-
-
+## DOWN COUNTER 
+![Screenshot 2023-12-30 101139](https://github.com/SIBIRAJIM/Exp-7-Synchornous-counters-/assets/154588445/d488e0c3-7083-4616-9e49-84f2cc97c619)
 
 ### RESULTS 
+By this we have verified the truth table of 4-bit up-counter using verilog.
